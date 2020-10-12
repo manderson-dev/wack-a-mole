@@ -3,6 +3,14 @@ body {
   padding: 0;
   background-color: #187c47;
 }
+img {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 .page {
   width: 600px;
   margin: auto;
