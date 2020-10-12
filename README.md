@@ -6,9 +6,9 @@ Clone this repo from github.
 
 In your console, perform the following commands:
 
-npm install
-npm run build
-npm run start
+1. npm install
+2. npm run build
+3. npm run start
 
 Open a browser and load:
 
