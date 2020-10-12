@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wack A Mole</title>
+    <link rel="stylesheet" href="mole.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="instructions">
+        <h1>Wack A Mole</h1>
+        <button id="btnStart">Start</button>
+        <button id="btnStop">Stop</button>
+        <button id="btnReset">Reset</button>
+        <div class="stats">
+          <div class="score">
+            <div>Time</div>
+            <div class="counter" id="timeCounter"></div>
+          </div>
+          <div class="score">
+            <div>Whacks</div>
+            <div class="counter" id="hitCounter"></div>
+          </div>
+          <div class="score">
+            <div>Misses</div>
+            <div class="counter" id="missCounter"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container"></div>
+    </div>
+    <script src="mole.min.js"></script>
+  </body>
+</html>

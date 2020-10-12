@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #187c47;
+}
+.page {
+  width: 600px;
+  margin: auto;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.instructions {
+  color: #ffffff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1em;
+}
+.mole-block {
+  float: left;
+  height: 150px;
+  width: 200px;
+  background-image: url("images/mole-hole.png");
+}
+.stats {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.score {
+  display: inline-block;
+  height: 50px;
+  color: #ffffff;
+  padding: 0.35em 1.2em;
+  margin: 0.1em 0.05em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.counter {
+  background-color: #197244;
+  padding: 10px;
+  height: 20px;
+  width: 30px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.clickable {
+  cursor: pointer;
+  z-index: 999;
+}
+.game-over {
+  opacity: 0.3;
+}
+button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ccffcc;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #000000;
+  background-color: #ccffcc;
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}

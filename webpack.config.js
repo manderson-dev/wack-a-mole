@@ -1,4 +1,6 @@
 const path = require('path')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/mole.js',
@@ -18,5 +20,15 @@ module.exports = {
                 }
             }
         }]
-    }
+    },
+    plugins: [
+        new CleanWebpackPlugin({}),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'src/images', to: 'images' },
+                { from: 'src/index.html', to: 'index.html'},
+                { from: 'src/mole.css', to: 'mole.css'},
+            ]
+        })
+    ]
 }
